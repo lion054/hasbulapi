@@ -37,12 +37,6 @@ router.get('/:id', (req, res) => {
     .catch(err => res.status(404).json({ noProjectfound: 'No Project found' }));
 });
 
-// router.get('/:coin_name', (req, res) => {
-//   Project.findById(req.params.id)
-//     .then(Project => res.json(Project))
-//     .catch(err => res.status(404).json({ noProjectfound: 'No Project found' }));
-// });
-
 // @route GET api/Projects/:id
 // @description Update Project
 // @access Public
