@@ -4,6 +4,7 @@ const cors = require('cors');
 
 // routes
 const projects = require('./routes/api/projects');
+const apply = require('./routes/api/apply');
 const homeworks = require('./routes/api/homeworks');
 const contents = require('./routes/api/contents');
 const cta = require('./routes/api/Cta');
@@ -28,6 +29,8 @@ app.use('/homework', homeworks);
 app.use('/content', contents);
 app.use('/cta', cta);
 app.use('/footer', footer);
+app.use('/apply', apply);
+
 
 const port = process.env.PORT || 8080;
 
