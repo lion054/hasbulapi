@@ -25,10 +25,10 @@ const schema = new mongoose.Schema({
         type: String
     },
     is_token_circulation: {
-        type: Boolean
+        type: String
     },
     eta_tge: {
-        type: Date
+        type: String
     },
     project_description: {
         type: String
@@ -46,7 +46,7 @@ const schema = new mongoose.Schema({
         type: String
     },
     is_product_launched: {
-        type: Boolean
+        type: String
     },
     supporting_documents: {
         type: String
@@ -68,4 +68,4 @@ const schema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Application', schema);
+module.exports = mongoose.model('application', schema);
