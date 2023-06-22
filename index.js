@@ -9,6 +9,8 @@ const homeworks = require('./routes/api/homeworks');
 const contents = require('./routes/api/contents');
 const cta = require('./routes/api/Cta');
 const footer = require('./routes/api/Footer');
+const login = require('./routes/api/login');
+const register = require('./routes/api/register');
 
 const app = express();
 
@@ -30,7 +32,8 @@ app.use('/content', contents);
 app.use('/cta', cta);
 app.use('/footer', footer);
 app.use('/apply', apply);
-
+app.use('/login', login);
+app.use('/register', register);
 
 const port = process.env.PORT || 8080;
 

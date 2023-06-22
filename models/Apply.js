@@ -65,7 +65,11 @@ const schema = new mongoose.Schema({
     updatedAt: {
         type: Date,
         default: Date.now
-    }
+    },
+    status: {
+        type: Number,
+        default: 0
+    },
 });
 
 module.exports = mongoose.model('application', schema);
